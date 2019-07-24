@@ -5,7 +5,7 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        <Appbar title="Tentang Kami"/>
+        <h1>Ini halaman About</h1>
       </div>
     )
   }
