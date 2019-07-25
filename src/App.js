@@ -10,6 +10,7 @@ import Navigation from "./component/Navigation";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import { Route, Switch } from "react-router-dom";
+import DataAPI from "./pages/DataAPI";
 
 // function App {
 //   return
@@ -32,10 +33,10 @@ class App extends React.Component {
         <Container maxWidth="md">
           <Navigation /> {/*nama komponen buttom navigation*/}
           <Switch>
-            <Route exact={true} path="/" component={Home}/>
-            <Route path="/store-locator" component={Counter}/>
-            <Route path="/scan" component={About}/>
-            <Route path="#" component={"nama komponennya"}/>
+            <Route exact={true} path="/" component={Home} />
+            <Route path="/store-locator" component={Counter} />
+            <Route path="/scan" component={About} />
+            <Route path="/data-api" component={DataAPI} />
           </Switch>
           {/* <Navigation changePage={this.handleChangePage}/>
           {
